@@ -1,12 +1,12 @@
 10
 Sword House
-Gekko
-Deadlock
-Iso (H)
-Clove
-Vyse
-Tejo
-Waylay
-Veto
-Miks
-Borrachudo (H)
+Alistair (H);Espada Flamberge;Escudo da Guarda Real
+Krag;Machado Quebra-Ossos;Escudo de Ferro Bruto
+Zed;Garra de Sombra;Garra de Sombra
+Oberyn (H);Lanca de Ponta Larga;Broquel de Aco Leve
+Tristan;Espada de Justa;Escudo Triangular
+Malakor;Adaga Serrilhada;Adaga Serrilhada
+Hakon;Mangual de Corrente;Escudo de Madeira Ferrada
+Cassian;Partisana Real;Escudo Oval de Infantaria
+Vex;Wakizashi Escura;Wakizashi Escura
+Baldwin;Espada de Cruzado;Escudo de Aco Temperado

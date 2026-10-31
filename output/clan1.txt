@@ -1,12 +1,12 @@
 10
 Dragon House
-Jett (H)
-Reyna (H)
-Raze
-Phoenix
-Omen
-Brimstone
-Sage
-Sova
-Cypher
-Killjoy
+Aldric (H);Espada Longa;Escudo Torre
+Bjorne;Machado de Guerra;Escudo Redondo de Carvalho
+Kaelen(H);Adaga Curva;Adaga Curva
+Garrick;Lanca de Cinzas;Paves de Infantaria
+Cedric;Montante de Aco;Escudo Brasao Real
+Varys(H);Punhal Envenenado;Punhal Envenenado
+Torin;Martelo de Batalha;Broquel de Ferro
+Halstein;Alabarda Pesada;Escudo de Vime Reforcado
+Nyx;Lamina Oculta;Lamina Oculta
+Roland;Espada Bastarda;Escudo Pipa de Metal

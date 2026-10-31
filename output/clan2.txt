@@ -1,12 +1,12 @@
 10
-Iron House
-Viper (H)
-Breach
-Skye
-Yoru
-Astra
-KAYO
-Chamber
-Neon
-Fade
-Harbor
+Berserkers
+Lancelot(H);Espada Real;Escudo de Ouro Velho
+Ragnar;Machado Nordico;Escudo Viking de Tilia
+Corvo;Lamina Dobravel;Lamina Dobravel
+Doran;Tridente de Guerra;Escudo de Malha Trancada
+Percival;Espada de Cavaleiro;Escudo Herdeiro
+Ezio;Adaga de Assalto;Adaga de Assalto
+Grom;Marreta de Cerco;Escudo de Chifre e Couro
+Varian;Lanca de Falange;Escudo Hoplita de Bronze
+Akali;Kunai de Ferro;Kunai de Ferro
+Arthur;Espada Ancestral;Escudo Fortaleza

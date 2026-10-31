@@ -1,12 +1,12 @@
 10
-Berserkers
-ZezinhoDaVandal
-PinadorProfissional
-CegoPelaSkye (H)
-PlantadorDeBomba
-SmurfDeFerro (H)
-ReiDoEco
-RussoGritando
-MochilaPesada
-InimigoDaMira
-VandalSemSkin
+Iron House
+Roderick (H);Claymore;Escudo de Placas
+Ulric;Machado Duplo;Escudo Cravejado
+Talon;Katar de Aco Negro;Katar de Aco Negro
+Einar;Pique de Cavalaria;Escudo Longo de Pinho
+Galahad;Espada de Duas Maos;Escudo Templario
+Shade (H);Stiletto Silencioso;Stiletto Silencioso
+Draven;Maca de Espinhos;Escudo de Bronze Batido
+Leoric;Glaive de Ferro;Paves de Couro Cru
+Riven;Faca de Arremesso;Faca de Arremesso
+Sigurd (H);Espada Larga;Escudo de Escamas
