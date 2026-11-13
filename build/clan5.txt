@@ -1,0 +1,7 @@
+5
+Blood Ravens
+Kael (H);Espada Bastarda;Escudo Cometa
+Vane;Machado de Batalha;Targe de Madeira
+Rurik;Lanca Longa;Escudo de Infantaria
+Silas (H);Adagas Gêmeas;Broquel de Aco
+Bram;Maca de Guerra;Escudo Gota

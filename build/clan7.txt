@@ -1,0 +1,10 @@
+8
+Obsidian Guard
+Korg (H);Martelo Colossal;Paves de Aco Negro
+Thorek;Machado Duplo;Escudo de Batalha Anao
+Bardin;Espada Curta de Aco;Broquel Reforcado
+Grim;Lanca de Falange;Escudo de Formacao
+Durin;Maca Estriada;Escudo Torreon
+Magni;Picareta de Guerra;Targe de Ferro
+Brann (H);Katar de Obsidiana;Manopla Defensiva
+Gimli;Espada Larga;Escudo

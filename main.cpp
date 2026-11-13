@@ -6,20 +6,28 @@
 #include <chrono> // pra fazer o terminal esperar
 #include <thread> // pra fazer o terminal esperar
 
+using namespace std;
 
 int main(){
     srand(time(0));
     printWelcome();
-    Clan clan1 = loadclan("clan1.txt");
-    Clan clan2 = loadclan("clan2.txt");
-    Clan clan3 = loadclan("clan3.txt");
-    Clan clan4 = loadclan("clan4.txt");
     
     vector<Clan> kidom; // Crio um sistema de ponteiros para permitir que kidom possa receber classes filhas de Character
-    kidom.push_back(clan1);
-    kidom.push_back(clan2);
-    kidom.push_back(clan3);
-    kidom.push_back(clan4);
+
+
+    size_t i = 1;
+    while(true){
+        string filename = "clan" + to_string(i) + ".txt";
+        ifstream file(filename);
+        if(!(file.is_open())){
+            break;
+        }
+        file.close();
+        kidom.push_back(loadclan(filename));
+        i++;
+    }
+
+
     vector<string> historia_de_inicio = {"Havia bem distante um reino, onde existiam em conjunto ", "Existia distante a oeste um reino, onde haviam em conjunto ", "Ouviu-se distante nas terras do norte um reino, onde existiam em conjunto ", "Houve em terras longinquas um reino, onde existiam em conjunto "};
     vector<string> historia_de_destruicao_de_cla = {"Esmagando seu ultimo membro vence o cla ", "Queimando tudo o que sobrou do cla ", "Sem misericordia, eleminando por completo o cla ", "De forma fria, eficiente e cruel, o cla "};
     vector<string> historia_de_destruicao_de_fim = {"No fim, nesse amontoado de cinzas e sangue o cla ", "No fim dessa guerra o cla ", "Sobre fogo e cheiro de sangue o cla ", "De forma a superar as espectativas o cla "};
@@ -27,9 +35,16 @@ int main(){
     vector<string> dinamica_de_defesa = {" apos sofrido o ataque  ", " mesmo cansado ", " com olhos que desejam vingaca pelo dano ", " com tudo o que tinha "};
     vector<string> dinamica_de_morte = {" apos sofrido o ataque morre, olhando pra cima e se perguntando de que vale tanto sangue\n", " depois de um golpe letal, olha intensamente pro seu adversario como quem se pergunta como e possivel, cai e morre\n", " com olhos cheio de lagrimas se debruca ao chao ja sem vida\n", " se vai com tudo o que tinha\n"};
     size_t hist = rand() % historia_de_inicio.size();
-    cout << historia_de_inicio.at(hist) << clan1.name << ", " << clan2.name  << ", " << clan3.name  << " e o " <<  clan4.name  << endl;
+
+    i = 0;
+    cout << historia_de_inicio.at(hist); // << clan1.name << ", " << clan2.name  << ", " << clan3.name  << " e o " <<  clan4.name  << endl;
+    for(; i < (kidom.size()-1);  i ++){
+        cout << kidom.at(i).name << " ";
+    }
+    cout << "e " << kidom.at(i).name << endl;
+
     cout << "Quando a paz foi rompida, e o odio tomou o lugar do que antes foi amizade\n";
-    this_thread::sleep_for(chrono::seconds(5));
+    this_thread::sleep_for(chrono::seconds(3));
     
     while(kidom.size() > 1){
         size_t clanattk = rand() % kidom.size();
@@ -37,8 +52,8 @@ int main(){
         do{
             clandef = rand() % kidom.size();
         }while(clandef == clanattk);
-        cout << kidom.at(clanattk).name << " declara guerra ao cla" << kidom.at(clandef).name << endl;
-        this_thread::sleep_for(chrono::seconds(0));
+        cout << kidom.at(clanattk).name << " declara guerra ao cla " << kidom.at(clandef).name << endl;
+        this_thread::sleep_for(chrono::milliseconds(500));
         while (true)
         {
             size_t persnattkc = rand() % kidom.at(clanattk).warriors.size();

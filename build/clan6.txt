@@ -1,0 +1,8 @@
+6
+Silver Griffons
+Arthur (H);Espada Longa de Prata;Escudo Cometa Brilhante
+Lancelot;Lanca de Justa;Escudo Triangular
+Gawain;Machado de Guerra;Targe Cravejado
+Percival;Maca de Batalha;Paves Cerimonial
+Bors;Montante;Manopla de Placas
+Gareth (H);Rapieira de Prata;Adaga de Aparar
