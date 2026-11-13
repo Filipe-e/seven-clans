@@ -1,92 +1,10 @@
 #include "player.hpp"
+#include "utils.hpp"
+#include "decorations.hpp"
 #include <vector>
 #include <time.h>
-#include <fstream> // pra leitura de dados
 #include <chrono> // pra fazer o terminal esperar
 #include <thread> // pra fazer o terminal esperar
-
-void printWelcome() {
-    cout << R"(
- __          __  _                            _          _   _            _    _     _                 
- \ \        / / | |                          | |        | | | |          | |  (_)   | |                
-  \ \  /\  / /__| | ___ ___  _ __ ___   ___  | |_ ___   | |_| |__   ___  | | ___  __| | ___  _ __ ___  
-   \ \/  \/ / _ \ |/ __/ _ \| '_ ` _ \ / _ \ | __/ _ \  | __| '_ \ / _ \ | |/ / |/ _` |/ _ \| '_ ` _ \ 
-    \  /\  /  __/ | (_| (_) | | | | | |  __/ | || (_) | | |_| | | |  __/ |   <| | (_| | (_) | | | | | |
-     \/  \/ \___|_|\___\___/|_| |_| |_|\___|  \__\___/   \__|_| |_|\___| |_|\_\_|\__,_|\___/|_| |_| |_|
-                                                                                                       
-                                                                                                     
-)" << '\n';
-}
-void printCastle() {
-    cout << R"(
-                                  o
-                                 /_\
-                                /_ _\
-                               |_|_|_|
-                               |  _  |
-                      o        | | | |        o
-                     /_\       | | | |       /_\
-                    /_ _\      | | | |      /_ _\
-                   |_|_|_|     | | | |     |_|_|_|
-                   |  _  |     | | | |     |  _  |
-                   | | | |_____| | | |_____| | | |
-                   | | | |_____+_|_|_+_____| | | |
-                   | |_| |     |   _   |   | |_| |
-                   | | | |     |  | |  |   | | | |
-                  /  | |  \    |  | |  |  /  | |  \
-                 |___|_|___|___|__| |__|___|___|_|___|
-)" << '\n';
-}
-
-void printFireInTheKidom() {
-    cout << R"(
- (     (    (                                            )  (    (         )     *     
- )\ )  )\ ) )\ )                      )    )          ( /(  )\ ) )\ )   ( /(   (  `    
-(()/( (()/((()/( (     (           ( /( ( /(    (     )\())(()/((()/(   )\())  )\))(   
- /(_)) /(_))/(_)))\    )\   (      )\()))\())  ))\  |((_)\  /(_))/(_)) ((_)\  ((_)()\  
-(_))_|(_)) (_)) ((_)  ((_)  )\ )  (_))/((_)\  /((_) |_ ((_)(_)) (_))_    ((_) (_()((_) 
-| |_  |_ _|| _ \| __|  (_) _(_/(  | |_ | |(_)(_))   | |/ / |_ _| |   \  / _ \ |  \/  | 
-| __|  | | |   /| _|   | || ' \)) |  _|| ' \ / -_)    ' <   | |  | |) || (_) || |\/| | 
-|_|   |___||_|_\|___|  |_||_||_|   \__||_||_|\___|   _|\_\ |___| |___/  \___/ |_|  |_| 
-)" << '\n';
-}
-
-
-
-
-Clan loadclan(const string& arq_name) {
-    Clan clan;
-    ifstream file_read(arq_name);
-    size_t parameter;
-    file_read >> parameter;
-    file_read.ignore();
-    
-    if (file_read.is_open()) {
-        string name, oweapon, dweapon;
-        getline(file_read, name);
-        clan.name = name; // Substitui clan.name
-        
-        while (getline(file_read, name, ';')) {
-            getline(file_read, oweapon, ';');
-            getline(file_read, dweapon);
-            
-            // Exemplo de como fica a adição de um guerreiro:
-            if (parameter % 5 == 0) {
-                clan.warriors.push_back(new Warrior(name, ((rand() % 200) + 1), ((rand() % 100) + 1), ((rand() % 20) + 1), dweapon, ((rand() % 20) + 1), ((rand() % 60) + 1), oweapon, ((rand() % 20) + 1), ((rand() % 40) + 1), ((rand() % 50) + 1), ((rand() % 100) + 1)));
-                continue;
-            }
-            // ... (mantenha os outros if/else com push_back em clan.warriors) ...
-        }
-    } else {
-        cout << "File was not opened " << endl;
-    }
-    file_read.close();
-    return clan;
-}
-
-int random_status(int max){
-    return ((rand() % max) + 1);
-}
 
 
 int main(){
